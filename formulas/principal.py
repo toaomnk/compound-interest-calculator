@@ -1,8 +1,33 @@
 def calculate():
-	a = float(input("\nEnter the Accumulated amount: $"))
-	r = float(input("\nEnter an Interest rate: %"))
+	while True:
+		try: 
+			a = float(input("\nEnter the Accumulated amount: $"))
+			break
+		except:
+			print("\nError: Improper Value Entered.")
+	while True:
+		try:
+			r = float(input("\nEnter an Interest rate: %"))
+			break
+		except:
+			print("\nError: Improper Value Entered.")
+	while True:
+		try:
+			t = float(input("\nEnter the number of years compounded: "))
+			break
+		except:
+			print("\nError: Improper Value Entered.")
 	print("\n[1] Daily [2] Weekly [3] Monthly [4] Quarterly [5] Semi-Annually [6] Annually [7] Continuously")
-	c = int(input("\nEnter the rate of compounding: "))
+	while True:
+		try:
+			c = int(input("\nEnter the rate of compounding: "))
+			if c > 7:
+				raise Exception("\nError: Improper Value Entered.")
+			if c < 1:
+				raise Exception("\nError: Improper Value Entered.")
+			break
+		except:
+			print("\nError: Improper Value Entered.")
 	if c == 1:
 		n = 365
 	elif c == 2:
@@ -17,7 +42,6 @@ def calculate():
 		n = 1
 	elif c == 7:
 		n = 2.7182
-	t = int(input("\nEnter the number of years compounded: "))
 	answer = float(a / (1 + ((r/100)/n)) ** (n * t))
 	print("\nThe principal amount is $%s." % round(answer, 2))
 

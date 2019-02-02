@@ -1,10 +1,35 @@
 import math
+
 def calculate():
-	a = float(input("\nEnter the Accumulated amount: $"))
-	p = float(input("\nEnter the Principal amount: $"))
-	t = int(input("\nEnter the number of years compounded: "))
+	while True:
+		try:
+			a = float(input("\nEnter the Accumulated amount: $"))
+			break
+		except:
+			print("\nError: Improper Value Entered.")
+	while True:
+		try:
+			p = float(input("\nEnter the Principal amount: $"))
+			break
+		except:
+			print("\nError: Improper Value Entered.")
+	while True:
+		try:
+			t = float(input("\nEnter the number of years compounded: "))
+			break
+		except:
+			print("\nError: Improper Value Entered.")
 	print("\n[1] Daily [2] Weekly [3] Monthly [4] Quarterly [5] Semi-Annually [6] Annually [7] Continuously")
-	c = int(input("\nEnter the rate of compounding: "))
+	while True:
+		try:
+			c = int(input("\nEnter the rate of compounding: "))
+			if c > 7:
+				raise Exception("\nError: Improper Value Entered.")
+			if c < 1:
+				raise Exception("\nError: Improper Value Entered.")
+			break
+		except:
+			print("\nError: Improper Value Entered.")
 	if c == 1:
 		n = 365
 	elif c == 2:

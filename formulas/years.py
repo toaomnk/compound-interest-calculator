@@ -1,4 +1,5 @@
 import math
+
 def calculate():
 	a = float(input("\nEnter the Accumulated amount: $"))
 	p = float(input("\nEnter the Principal amount: $"))
