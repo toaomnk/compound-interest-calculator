@@ -1,3 +1,3 @@
 # compound-interest-calculator
 
-Just run calculate.py to easily answer problems!
+Just run calculate.py to start answering problems!
