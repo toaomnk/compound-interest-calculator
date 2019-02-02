@@ -1,2 +1,3 @@
 # compound-interest-calculator
-A tool to help struggling Algebra students
+
+A command-line tool that will help Algebra students breeze through compound-interest related problems.
