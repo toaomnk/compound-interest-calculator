@@ -16,21 +16,12 @@ while True:
 		print("\nError: Improper value inputed.")
 		
 if var == 1:
-	while True:
-		try:
-			accumulated_amount.calculate()
-			break
-		except:
-			print("\nError: Improper Value Entered.")
+	accumulated_amount.calculate()
 elif var == 2:
 	principal.calculate()
-
 elif var == 3:
 	rate.calculate()
-
 elif var == 4:
 	years.calculate()
-
-
 
 input("\nPress ENTER to exit.")

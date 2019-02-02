@@ -23,7 +23,6 @@ def calculate():
 			break
 		except:
 			print("\nError: Improper value inputed.")
-
 	answer = math.log10(a/p) / (math.log10(1 + (r/100)))
 	print("\nThe number of years compounded is %s." % round(answer, 2))
 
