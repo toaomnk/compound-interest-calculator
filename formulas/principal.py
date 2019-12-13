@@ -1,3 +1,5 @@
+import math
+
 def calculate():
 
 	while True: # While loop allows program to continue running when exceptions occur.
