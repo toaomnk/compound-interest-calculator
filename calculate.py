@@ -17,19 +17,19 @@ while True: # While loop allows program to continue running when exceptions occu
 		print("\nError: Improper value inputed.")
 
 if var == 1:
-	from Compound_Interest import accumulated_amount
+	from formulas import accumulated_amount
 	accumulated_amount.calculate() # Initilization.
 
 elif var == 2:
-	from Compound_Interest import principal
+	from formulas import principal
 	principal.calculate() # Initilization.
 
 elif var == 3:
-	from Compound_Interest import rate
+	from formulas import rate
 	rate.calculate() # Initilization.
 	
 elif var == 4:
-	from Compound_Interest import years
+	from formulas import years
 	years.calculate() # Initilization.
 	
 input("\nPress ENTER to exit.")
